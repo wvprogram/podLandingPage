@@ -4,7 +4,11 @@
 
     /* colors */
     --clr-background: #FEF7EF;
+    --clr-feature-bg: #FDF9F9;
     --clr-purple-bg: #FEF2FE;
+    --clr-orange-bg: #F56823;
+    --clr-yellow-bg: #E0A12C;
+    --clr-green-bg: #1FAFA4;
     --clr-text: #4F4F4F;
     --clr-black: #000000;
     --clr-white: #ffffff;
@@ -202,7 +206,7 @@ body {
 
 .title__link i:hover {
     color: inherit;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.1s ease-in-out;
 }
 
 /* title bubble subscribers */
@@ -297,7 +301,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 6rem 0;
+    padding: 6rem 0 12rem 0;
+    position: relative;
 }
 
 /* creator heading */
@@ -340,3 +345,95 @@ body {
     transition: background 0.3s ease-in-out;
 }
 
+/* creator people display */
+.creator__person {
+    border: 1px solid var(--clr-black);
+    box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.44);
+    border-radius: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    padding: 1.5rem 1rem 2rem 0;
+}
+
+.creator__person-detail {
+    width: 57%;
+    position: relative;
+    z-index: 9;
+}
+
+.creator__person-detail h3 {
+    font-family: var(--ff-heading);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.creator__person-detail p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.2rem;
+}
+
+.creator__person-detail button {
+    padding: 0.5rem 1rem;
+    background: var(--clr-black);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-black);
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.44);
+}
+
+.creator__person-detail button:hover {
+    cursor: pointer;
+    border: 1px solid var(--clr-white);
+    /* color: var(--clr-black); */
+    transition: border 0.3s ease-in-out;
+}
+
+.creator__person-detail button i {
+    margin-right: 0.5rem;
+}
+
+.orange__bg {
+    background: var(--clr-orange-bg);
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+}
+
+.creator__orange-img {
+    position: absolute;
+    height: 15rem;
+    bottom: -2rem;
+    left: -9.5rem;
+    z-index: 1;
+}
+
+.yellow__bg {
+    background: var(--clr-yellow-bg);
+    position: absolute;
+    bottom: -7rem;
+}
+
+.creator__yellow-img {
+    position: absolute;
+    height: 15rem;
+    width: 10rem;
+    bottom: -2rem;
+    left: -10rem;
+    z-index: 1;
+}
+
+.green__bg {
+    background: var(--clr-green-bg);
+    position: absolute;
+    bottom: -7rem;
+    right: 0;
+}
+
+
+/********** Feature Section **********/
+.feature {
+    margin-top: 15rem;
+}
