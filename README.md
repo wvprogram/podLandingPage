@@ -1,2 +1,1 @@
-# podLandingPage
-Podcast Clone Landing Page
+# Podcast Clone Landing Page
