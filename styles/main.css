@@ -1,0 +1,342 @@
+:root {
+    /* font family for headings */
+    --ff-heading: 'Playfair Display', serif;
+
+    /* colors */
+    --clr-background: #FEF7EF;
+    --clr-purple-bg: #FEF2FE;
+    --clr-text: #4F4F4F;
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-purple: #936CDF;
+    --clr-dark-purple: #7153AD;
+    --clr-blue: #0060C4;
+}
+
+
+/********** General Styling **********/
+body {
+    background: var(--clr-background);
+}
+
+.container {
+    max-width: 1330px;
+    width: 100%;
+    margin-inline: 1rem;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-background);
+}
+
+.main {
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/********** Navigation Bar **********/
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    height: 4rem;
+    position: relative;
+}
+
+/* navigation logo section */
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar__logo i {
+    color: var(--clr-purple);
+}
+
+.navbar__logo span {
+    font-family: var(--ff-heading);
+    font-weight: 700;
+}
+
+/* navigation links section */
+.navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar__links li a {
+    text-decoration: none;
+    color: var(--clr-black);
+    font-weight: 500;
+}
+
+.navbar__links li a:hover {
+    color: var(--clr-blue);
+}
+
+/* navigation SVG */
+.navbar__svg-bg {
+    position: absolute;
+    right: 0;
+    top: -20rem;
+    z-index: 3;
+}
+
+.navbar__svg-bg svg {
+    width: 25rem;
+}
+
+.navbar__svg-person {
+    position: absolute;
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+    top: 5.8rem;
+    right: 2rem;
+    height: 25rem;
+    z-index: 9;
+}
+
+.navbar__svg-media--player {
+    position: absolute;
+    top: 13rem;
+    right: 14rem;
+    z-index: 7;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.44);
+}
+
+
+/********** Title Section **********/
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    position: relative;
+}
+
+/* title heading and description */
+.title__details h3 {
+    font-family: var(--ff-heading);
+    color: var(--clr-purple);
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
+.title__details h1 {
+    font-family: var(--ff-heading);
+    font-size: 3rem;
+    line-height: 3.8rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.title__details span {
+    font-family: var(--ff-heading);
+    color: var(--clr-purple);
+    font-weight: 900;
+}
+
+.title__details p {
+    line-height: 1.5rem;
+    color: var(--clr-text);
+}
+
+/* title button and links */
+.title__button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.title__button button {
+    background: var(--clr-purple);
+    border: 1px solid var(--clr-purple);
+    box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.44);
+    border-radius: 5px;
+    color: var(--clr-white);
+    margin-right: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+}
+
+.title__button button:hover {
+    cursor: pointer;
+    background: var(--clr-dark-purple);
+    transition: background 0.3s ease-in-out;
+}
+
+.title__link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;                               
+}                   /*get both icon and text to change color */
+
+.title__link i {
+    font-size: 1.5rem;
+    color: var(--clr-purple);
+}
+
+.title__link span {
+    margin-left: 0.5rem;
+}
+
+.title__link:hover {
+    color: var(--clr-blue);
+    transition: color 0.3s ease-in-out;
+}
+
+.title__link i:hover {
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+}
+
+/* title bubble subscribers */
+.title__bubble {
+    display: flex;
+    align-items: center;
+}
+
+.title__bubble-users {
+    position: relative;
+}
+
+.title__bubble-person {
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 1px solid var(--clr-white);
+    margin-right: 5.5rem;
+    box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.44);
+}
+
+.title__bubble-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__bubble-detail h3 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.title__bubble-detail span {
+    font-size: 0.8rem;
+    color: var(--clr-text);
+}
+
+.person__two {
+    position: absolute;
+    left: 2rem;
+}
+
+.person_three {
+    position: absolute;
+    left: 4rem;
+    top: 0;
+}
+
+/* title SVG */
+.title__svg-bg {
+    position: absolute;
+    right: -30rem;
+    bottom: -30rem;
+    z-index: 3;
+}
+
+.title__svg-bg svg {
+    width: 25rem;
+}
+
+.title__svg-person {
+    position: absolute;
+    bottom: -10rem;
+    right: -26rem;
+    z-index: 9;
+}
+
+.title__svg-sound--wave {
+    position: absolute;
+    left: 48rem;
+    bottom: -7rem;
+    width: 90%;
+    z-index: 9;
+    opacity: 0.5;
+}
+
+
+/********** Creator Section **********/
+.creator__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    background: var(--clr-purple-bg);
+    width: 100%;
+}
+
+.creator {
+    max-width: 1330px;
+    width: 100%;
+    margin-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+/* creator heading */
+.creator__heading {
+    text-align: center;
+    width: 50%;
+}
+
+.creator__heading h2 {
+    font-family: var(--ff-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.creator__heading span {
+    font-family: var(--ff-heading);
+    color: var(--clr-purple);
+}
+
+.creator__heading p {
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--clr-text);
+}
+
+.creator__heading button {
+    background: var(--clr-purple);
+    border: 1px solid var(--clr-purple);
+    box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.44);
+    border-radius: 5px;
+    color: var(--clr-white);
+    margin-right: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+}
+
+.creator__heading button:hover {
+    cursor: pointer;
+    background: var(--clr-dark-purple);
+    transition: background 0.3s ease-in-out;
+}
+
