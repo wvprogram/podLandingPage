@@ -1,6 +1,6 @@
 # Podcast Clone Landing Page
 
-This landing page was created with HTML/CSS and the design was inspired by MindInventory from dribble.com. The free images were taken from freepik.com.
+This landing page was created using only HTML and CSS.
 
 Biult with:
 - Semantic HTML5 markup
@@ -16,3 +16,8 @@ Learned:
 - CSS filter properties
 - CSS transition properties
 - compressing and customizing SVG and pictures
+
+Resources:
+- Design by MindInventory from www.dribble.com
+- Images from www.freepik.com
+- Most of the text was generated from www.chatgpt.com
