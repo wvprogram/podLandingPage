@@ -1,4 +1,4 @@
-# Podcast Clone Landing Page
+# Podcast Landing Page
 
 This landing page was created using only HTML and CSS.
 
