@@ -18,6 +18,6 @@ Learned:
 - compressing and customizing SVG and pictures
 
 Resources:
-- Design by MindInventory from www.dribble.com
+- Design by MindInventory from www.dribbble.com
 - Images from www.freepik.com
 - Most of the text was generated from www.chatgpt.com
