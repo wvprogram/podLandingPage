@@ -22,17 +22,13 @@
 /********** General Styling **********/
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     background: var(--clr-background);
     position: relative;
-}
-
-@media screen and (max-width: 1601px) {
-    body {
-        overflow-x: hidden;
-    }
+    overflow-x: hidden;
 }
 
 .container {
