@@ -13,8 +13,7 @@ Learned:
 - first time implemented SVG
 - make changes to SVG images
 - CSS positioning to overlap 2-3 different elements
-- CSS filter properties
-- CSS transition properties
+- CSS transform, transition, and filter properties
 - compressing and customizing SVG and pictures
 
 Resources:
