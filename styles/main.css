@@ -1256,6 +1256,11 @@ body {
         justify-self: center;
         align-items: center;
     }
+
+    .category__detail-buttons ul {
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
 }
 
 
