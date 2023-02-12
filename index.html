@@ -17,19 +17,24 @@
         <div class="container">
             <div class="navbar">
                 <div class="navbar__logo">
-                    <i class="fa-solid fa-podcast"></i>
-                    <span>Podcast</span>
+                    <a href="#top" class="logo">
+                        <i class="fa-solid fa-podcast"></i>
+                        <span>Podcast</span>
+                    </a>
                 </div>
-                <ul class="navbar__links">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-                <div class="navbar__menu">
+                <div class="navbar__menu-hamburger">
                     <i class="fa-solid fa-bars"></i>
                 </div>
+                <div class="navbar__menu-x x-inactive">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <ul class="navbar__links">
+                    <li><a href="#feature" class="navbar__links-selected feature-link">Features</a></li>
+                    <li><a href="#platform" class="navbar__links-selected platform-link">How It Works</a></li>
+                    <li><a href="#price" class="navbar__links-selected price-link">Pricing</a></li>
+                    <li><a href="#category" class="navbar__links-selected category-link">Categories</a></li>
+                    <li><a href="#" class="navbar__links-selected about-link">About</a></li>
+                </ul>
                 <div class="navbar__svg-bg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="814" height="814">
                         <rect width="336" height="770" x="80" y="50" fill="#0064C1" fill-rule="evenodd" rx="218" transform="rotate(1 718.814 -291.157)"/>
@@ -125,7 +130,7 @@
         </div>
 
         <div class="container">
-            <section class="feature">
+            <section class="feature" id="feature">
                 <div class="feature__list">
                     <h2>What makes us <span>unique</span> from others?</h2>
                     <p>Here are the 4 reasons that make you understand why we are unique!</p>
@@ -147,7 +152,7 @@
         </div>
 
         <div class="platform__container">
-            <section class="platform">
+            <section class="platform" id="platform">
                 <div class="platform__title">
                     <h2>We make your <span>podcasting</span> easy!</h2>
                     <p>Discover the ultimate podcasting experience with us. Say goodbye to cluttered interfaces and endless searching for your next favorite show. With us, you can easily find, subscribe, and listen to thousands of podcasts all in one place.</p>
@@ -179,7 +184,7 @@
         </div>
 
         <div class="container">
-            <section class="categories">
+            <section class="categories" id="category">
                 <div class="category__detail">
                     <div class="category__detail-description">
                         <h2>Select and learn about your preferred <span>categories</span> of podcast</h2>
@@ -302,7 +307,7 @@
         </div>
 
         <div class="container">
-            <section class="prices">
+            <section class="prices" id="price">
                 <h2>Share your views towards your favorite topic at <span>affordable prices</span></h2>
                 <div class="prices__buttons">
                     <button class="prices__btn-active">Monthly</button>
@@ -394,5 +399,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
