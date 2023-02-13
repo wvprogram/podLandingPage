@@ -1,4 +1,5 @@
 let menuRun = () => {
+    /*********** Navigation Menu **********/
     //variables to hold css classes
     let hamburger = document.getElementsByClassName("navbar__menu-hamburger")[0],
     xMark = document.getElementsByClassName("navbar__menu-x")[0],
@@ -32,6 +33,22 @@ let menuRun = () => {
     category.addEventListener("click", hamburgerOpen);
     about.addEventListener("click", hamburgerOpen);
     logo.addEventListener("click", hamburgerOpen);
+
+
+    /*********** Add Shadow to Navigation Menu **********/
+    let shadowNav = document.getElementsByClassName("header")[0];
+
+    let shadow = () => {
+        let yAxis = window.scrollY;
+
+        if (yAxis >= 55) {
+            shadowNav.classList.add("header-shadow");
+        } else {
+            shadowNav.classList.remove("header-shadow");
+        }
+    }
+
+    window.addEventListener("scroll", shadow);
 }
 
 menuRun();
